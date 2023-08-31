@@ -39,8 +39,8 @@ The CoffeeCommerce web app is built using a stack of modern technologies:
 2. Install dependencies.
 3. Set up the MySQL database using the provided schema.
 4. Configure the database connection.
-5. Start the server:
-6. Access the web app at.
+5. Start the server.
+6. Access the web app.
 
 ## Usage
 
