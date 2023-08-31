@@ -31,8 +31,6 @@ The CoffeeCommerce web app is built using a stack of modern technologies:
   - Express (^4.18.2)
   - Body-parser (^1.19.0)
   - MySQL (^2.18.1)
-  - Bcrypt (^5.0.1)
-  - Express-session (^1.17.2)
   - ...and more
 
 ## Development Setup
