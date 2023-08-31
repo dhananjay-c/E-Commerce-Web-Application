@@ -49,7 +49,7 @@ The CoffeeCommerce web app is built using a stack of modern technologies:
 - Explore coffee flavors, read and post reviews, and add products to your wishlist or cart.
 - Create an account or log in to access personalized features.
 - Proceed to checkout to complete your coffee order.
-- Admins can log in to the admin panel (`/admin`) to manage products and view orders.
+- Admins can log in to the admin panel to manage products and view orders.
 
 
 ## Contact
