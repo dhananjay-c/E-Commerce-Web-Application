@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the CoffeeCommerce web application repository! Indulge in the world of rich coffee flavors with our full-stack e-commerce project. This platform allows users to explore, order, and review various coffee products. With features like browsing products, adding to wishlist and cart, leaving reviews, and seamless checkout, coffee enthusiasts are in for a treat. Additionally, registered users can access their personalized dashboard to manage their wishlist, cart, and order history. The admin panel empowers website owners to oversee orders efficiently.
+Welcome to the Death Wish Coffee web application repository! Indulge in the world of rich coffee flavors with our full-stack e-commerce project. This platform allows users to explore, order, and review various coffee products. With features like browsing products, adding to wishlist and cart, leaving reviews, and seamless checkout, coffee enthusiasts are in for a treat. Additionally, registered users can access their personalized dashboard to manage their wishlist, cart, and order history. The admin panel empowers website owners to oversee orders efficiently.
 
 ## Features
 
