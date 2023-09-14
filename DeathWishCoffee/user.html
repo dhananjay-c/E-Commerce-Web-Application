@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="img/icon2.png">
+    <link rel="stylesheet" href="css/user.css">
+    <title id="title">User</title>
+</head>
+
+<body>
+
+    <div class="crt">
+        <div class="addedToCart" id="addedToCart">Cart is Empty..!</div>
+    </div>
+
+    <nav>
+        <img src="img/logout.png" alt="" class="user navItem" onclick="logOut()">
+        <span>
+            <a href="index.html" class="navItem">Home</a>
+            <a href="shop.html" class="navItem">Shop</a>
+            <a href="404.html" class="navItem">About</a>
+            <a href="404.html" class="navItem">Contact</a>
+        </span>
+    </nav>
+    <div class="logoDiv"><a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></div>
+
+
+    <div class="great">
+        <h1 class="hello" id="hello"></h1>
+    </div>
+    <hr>
+
+    <div class="options">
+        <div class="opItems wishlist" onclick="displaySaved()"><img src="img/save.png" alt="" class="imgs"></div>
+        <div class="opItems cart" onclick="displayCart()"><img src="img/cart.png" alt="" class="imgs" onclick=""></div>
+        <div class="opItems orders" onclick="displayOrders()"><img src="img/order.png" alt="" class="imgs" onclick="">
+        </div>
+    </div>
+
+    <div class="slected" id="slected"></div>
+
+    <!-- <div class="cOutDiv">
+        <span>
+            <h2 class="tPrice"><span>Total</span> - ₹499</h2>
+        </span>
+        <span>
+            <input type="button" value="Check Out" class="cOut">
+        </span>
+    </div> -->
+
+
+
+
+
+
+
+
+
+    <script src="javascript/user.js"></script>
+</body>
+
+</html>

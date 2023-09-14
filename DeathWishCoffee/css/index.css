@@ -1,0 +1,703 @@
+* {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Revans;
+    src: url(Revans.otf);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: Revans;
+}
+
+*::selection {
+    color: rgb(0, 0, 0);
+    background-color: rgb(215, 12, 27);
+}
+
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(215, 12, 27);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(225, 39, 39);
+}
+
+
+nav {
+    width: 100vw;
+    height: 7vmax;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 10;
+}
+
+.user {
+    width: 3vmax;
+    height: 3vmax;
+    cursor: pointer;
+    margin-right: 2vmax;
+    position: relative;
+    z-index: 11;
+    transition: all .15s;
+}
+
+.user:hover {
+    transform: scale(1.1);
+}
+
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 11vmax;
+}
+
+
+.logoDiv {
+    display: flex;
+    margin-left: 2vmax;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+.navItem {
+    margin-left: 3vmax;
+    font-size: 1.3vmax;
+}
+
+.selected {
+    color: rgb(215, 12, 27);
+    font-size: 1.3vmax;
+    font-weight: 80;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shopBtn {
+    position: absolute;
+    margin-left: 4vmax;
+
+    /* top: 70vh; */
+    bottom: 0;
+
+    background-color: rgb(215, 12, 27);
+    padding: 1vmax;
+    padding-right: 4vmax;
+    padding-left: 4vmax;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+
+    background: rgba(215, 12, 27, 0.68);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(215, 12, 27, 1);
+
+}
+
+
+
+.videoDiv {
+    position: relative;
+    top: 7vmax;
+    width: 100%;
+    height: 80vh;
+}
+
+.videoDiv video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+
+
+
+
+.banner {
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 7.1vmax;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.589), rgb(0, 0, 0));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slogan {
+    color: rgb(215, 12, 27);
+    font-size: 6vmax;
+    line-height: 6vmax;
+    width: 70vw;
+    font-weight: 800;
+    position: relative;
+    top: 8vmax;
+    left: 4vw;
+}
+
+
+
+
+
+
+
+
+
+.shop {
+    /* border: 1px solid yellow; */
+    width: 90vw;
+    margin: auto;
+    height: auto;
+    position: relative;
+    top: 20vh;
+}
+
+.shopHead {
+    text-align: center;
+    color: rgb(215, 12, 27);
+    font-weight: 800;
+    font-size: 5vmax;
+}
+
+.shopPara {
+    width: 90%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 1.7vmax;
+    margin-top: 2vmax;
+}
+
+
+
+.products {
+    /* border: 1px solid blue; */
+    width: 20vw;
+    margin-top: 5vmax;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    /* border: 2px solid palevioletred; */
+    width: 350px;
+    height: auto;
+    margin-bottom: 4vmax;
+}
+
+
+
+.productImg {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+    transition: all .5s;
+    transition: all 1s;
+}
+
+a {
+    color: white;
+    transition: all .15s;
+}
+
+a:hover {
+    color: rgb(215, 12, 27);
+}
+
+.productDetail {
+    text-align: center;
+    font-size: 1.5vmax;
+    margin-top: 1vmax;
+    font-weight: 700;
+}
+
+.productDetail h3 {
+    text-align: center;
+    color: white;
+    margin-top: 1vmax;
+    font-size: 1.9vmax;
+}
+
+a.sh {
+    color: rgb(24, 24, 24);
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(215, 12, 27);
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 1.2vmax;
+    font-size: 1.5vmax;
+    margin-top: 1vmax;
+    margin-bottom: 1.5vmax;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LOGIN */
+
+.login {
+    background-color: #0000006e;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 14;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: unset;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.loginForm {
+    border: 1px solid rgba(215, 12, 26, 0.712);
+    width: 30vmax;
+    height: 30vmax;
+    height: auto;
+    background-color: #000000d3;
+}
+
+
+.cancel {
+    width: 2vmax;
+    margin-top: .5vmax;
+    cursor: pointer;
+    margin-left: 27.5vmax;
+}
+
+.loginForm h1 {
+    color: rgb(215, 12, 27);
+    text-align: center;
+    font-size: 4vmax;
+}
+
+.options {
+    margin-top: 2vmax;
+    width: 100%;
+    height: 3vmax;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vmax;
+}
+
+.log {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(137, 142, 142);
+    transition: all .15s;
+}
+
+.log:hover {
+    background-color: rgb(215, 12, 27);
+}
+
+.sig {
+    background-color: rgb(137, 142, 142);
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.sig:hover {
+    background-color: rgb(215, 12, 27);
+}
+
+
+.input {
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-top: 1vmax;
+    height: 3vmax;
+    border: 3px solid rgb(137, 142, 142);
+    padding-left: 1vmax;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logBtn {
+    display: block;
+    background-color: rgb(137, 142, 142);
+    font-size: 1.5vmax;
+    height: 4vmax;
+    width: 95%;
+    border: none;
+    margin: auto;
+    margin-top: 2vmax;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .15s;
+    margin-bottom: 2vmax;
+}
+
+.logBtn:hover {
+    background-color: rgb(215, 12, 27);
+}
+
+
+
+
+
+.select {
+    background-color: rgb(215, 12, 27);
+}
+
+
+
+
+
+
+
+.errMsg {
+    color: rgb(215, 12, 27);
+    margin-top: 1vmax;
+    text-align: center;
+    font-size: 1vmax;
+}
+
+.errMsg span {
+    text-decoration: underline solid rgb(215, 12, 27);
+    cursor: pointer;
+}
+
+
+
+.errSpan {
+    display: none;
+}
+
+
+.errSpan2 {
+    display: none;
+}
+
+
+.OkSpanSignE2 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signupForm {
+    border: 1px solid rgba(215, 12, 26, 0.712);
+    width: 30vmax;
+    height: auto;
+    background-color: #000000d3;
+}
+
+.signupForm h1 {
+    color: rgb(215, 12, 27);
+    text-align: center;
+    font-size: 4vmax;
+}
+
+.sigBtn {
+    display: block;
+    background-color: rgb(137, 142, 142);
+    font-size: 1.5vmax;
+    height: 4vmax;
+    width: 95%;
+    border: none;
+    margin: auto;
+    margin-top: 2vmax;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 2vmax;
+    transition: all .15s;
+}
+
+.sigBtn:hover {
+    background-color: rgb(215, 12, 27);
+}
+
+
+
+
+
+.errMsg {
+    color: rgb(215, 12, 27);
+    margin-top: 1vmax;
+    text-align: center;
+    font-size: 1vmax;
+}
+
+.errSpanSignE1 {
+    display: none;
+}
+
+.errSpanSignE2 {
+    display: none;
+}
+
+
+
+/* LOGIN END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lightning1 {
+    position: absolute;
+    z-index: -1;
+    margin-top: 5vmax;
+    left: -30vw;
+    width: 90vw;
+}
+
+
+
+.handshake {
+    background-color: #00000000;
+    width: 100vw;
+    height: auto;
+    margin-top: 35vh;
+    margin-bottom: 15vh;
+}
+
+.handshake img {
+    display: block;
+    margin: auto;
+    width: 13vw;
+}
+
+.handshake p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-size: 2.7vmax;
+    font-weight: 800;
+}
+
+
+
+
+
+
+.page1 {
+    margin-top: 6vmax;
+    display: flex;
+}
+
+div.text {
+    color: white;
+    font-weight: 800;
+    font-size: 20vw;
+}
+
+
+
+.slapImg {
+    width: 38vw;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
+
+.page2 {
+    margin-top: 15vw;
+    display: flex;
+}
+
+.page2 div.text {
+    color: white;
+    text-align: right;
+    font-weight: 800;
+    font-size: 20vw;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.page2 .slapImg {
+    width: 38vw;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+.lightning2 {
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    z-index: -10;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100vw;
+    background-color: rgb(215, 12, 27);
+    height: 7vmax;
+    margin-top: 80vw;
+    display: flex;
+}
+
+
+footer p {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}

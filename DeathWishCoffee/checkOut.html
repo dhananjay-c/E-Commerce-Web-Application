@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="img/icon2.png">
+    <link rel="stylesheet" href="css/checkOut.css">
+    <title id="title">Check Out</title>
+</head>
+
+<body>
+
+
+    <div class="crt">
+        <div class="addedToCart" id="addedToCart">Order Placed..!</div>
+    </div>
+
+
+
+    <h1>Order Summary</h1>
+    <div class="main">
+        <hr>
+        <span id="Item">
+
+            <!-- <div class="item">
+                <div class="itemImg" style="background-image: url('img/er.jpg');"></div>
+                <div class="itemDis">
+                    <h2 class="tag">Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio placeat accusantium distinctio
+                        similique consequatur cupiditate nam vitae voluptates reprehenderit vero voluptas dolorem
+                        laudantium
+                        numquam eius sint, aut reiciendis magni ducimus.</p>
+                    <h2>₹499</h2>
+                </div>
+            </div> -->
+
+        </span>
+
+    </div>
+
+    <div class="total">
+        <p id="subT">Subtotal: $[Subtotal] </p>
+        <hr>
+        <p id="tax">Tax (5%): $[Tax Amount]</p>
+        <hr>
+        <p id="deliveryF">Delivery Fees: ₹100</p>
+        <hr>
+        <p id="totalC">Total Due: $[Total Due]</p>
+        <hr>
+    </div>
+
+
+    <div class="details">
+        <h2>Delivery Details</h2>
+        <div>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone">
+            <input type="text" id="pincode" placeholder="Pincode">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <textarea name="add" id="address" placeholder="Delivery Address..."></textarea>
+            <input type="button" value="Place Order" class="order" onclick="placeOrder()">
+        </div>
+        <p class="errMsg" id="errMsg">Kindly ensure that all the information is entered correctly and comprehensively.
+        </p>
+    </div>
+
+
+
+
+    <script src="javascript/checkOut.js"></script>
+</body>
+
+</html>
