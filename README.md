@@ -55,4 +55,5 @@ The CoffeeCommerce web app is built using a stack of modern technologies:
 For inquiries or support, please email me at dhananjaychavan0907@gmail.com.
 
 ---
+*Note: This project is still a work in progress and has not yet reached its final completion.*
 *Note: This project is for demonstration purposes only and may not reflect real e-commerce functionality.*
